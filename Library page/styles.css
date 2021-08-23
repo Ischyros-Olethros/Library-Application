@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #D7CCC8;
+  /*  background-image: url(./images/bac.jpg);
+    background-position: center;
+    background-size: cover;*/
+}
+
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+     width: 100%; 
+     height: 280px;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    /*background-color: #eee;*/
+    padding: 1rem;
+}
+header h1 {
+    font-size: 2.5rem;
+    line-height: 2;
+    color: var(--color-primary);
+}
+
+form input {
+    width: 20rem;
+    padding: .7rem;
+    /*border: none;*/
+    float: right;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--color-sec);
+
+    margin-bottom: 1rem;
+
+}
+
+ .btn {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+    /*background-color: var(--color-sec);*/
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/*.active {
+    background-color: var(--color-primary);
+}*/
+
+#store-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem 0;
+    margin-left: 10%;
+}
+
+.store-product {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    max-width: 250px;
+
+}
+
+.product-details {
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #CFD8DC;
+    height: 170px;
+  }
+ 
+
+.product-details h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.product-details p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+.product-details p span {
+    text-decoration: line-through;
+    color: red;
+    font-weight: normal;
+}
+
+.product-details a {
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+  }
+
+.product-details a:hover {
+   background-color: orange;
+}
+
+.button{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.checked {
+  color: orange;
+}
+h6{
+    margin-top: 10px;
+}
+span{
+    margin-top: 10px;
+}
+.product-details h2{
+    font-weight: bold;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
