@@ -10,8 +10,14 @@ from datetime import datetime, timedelta, date
 from django.core.mail import send_mail
 from librarymanagement.settings import EMAIL_HOST_USER
 
-def landing_view(request):
+
+#  for url mapping
+# make functions according to your needs
+def landing_view(request): 
    return render(request, 'library/landing.html')  
+#  it just renders an html page
+
+
 
 def home_view(request):
     if request.user.is_authenticated:

@@ -23,6 +23,8 @@ from django.contrib.auth.views import LoginView,LogoutView
 
 urlpatterns = [
     path('landing/', views.landing_view),
+    # LANDING BHANEKO TYO SLASH PAXADI
+#   function ko name tyo views.langind bhanne jun arko ma banako thiyo
 
     path('admin/', admin.site.urls),
     path('accounts/',include('django.contrib.auth.urls') ),
