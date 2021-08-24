@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}" />
+  </head>
+  <body>
+    <header>
+      {% include "library/navbaradmin.html" %}
+      <div class="break"></div>
+      <div class="container">
+        <!--   <h1>Product Filter</h1> -->
+        <!-- Search box -->
+        <div class="search-box">
+          <form action="" onsubmit="return false">
+            <input type="text" id="search" placeholder="Search Books" />
+            <!-- <button id="btn-search">Search</button> -->
+          </form>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Filter By:</button>
+          <div class="dropdown-content">
+            <a href="#" class="btn active" data-filter="all">All</a>
+            <a href="#" class="btn" data-filter="education">Education</a>
+            <a href="#" class="btn" data-filter="action">Action</a>
+            <a href="#" class="btn" data-filter="politics">Politics</a>
+            <a href="#" class="btn" data-filter="comedy">Comedy</a>
+            <a href="#" class="btn" data-filter="love">Love</a>
+            <a href="#" class="btn" data-filter="drama">Drama</a>
+            <a href="#" class="btn" data-filter="horror">Horror</a>
+          </div>
+        </div>
+
+        <!-- <div class="filter-box">
+<a href="#" class="btn active" data-filter="all">All</a>
+<a href="#" class="btn" data-filter="education">Education</a>
+<a href="#" class="btn" data-filter="action">Action</a>
+<a href="#" class="btn" data-filter="politics">Politics</a>
+<a href="#" class="btn" data-filter="comedy">Comedy</a>
+<a href="#" class="btn" data-filter="love">Love</a>
+<a href="#" class="btn" data-filter="drama">Drama</a>
+<a href="#" class="btn" data-filter="horror">Horror</a>
+</div> -->
+      </div>
+    </header>
+
+    <main>
+      <div class="slide-container">
+        <section class="container" id="store-products">
+          <div class="store-product education">
+            <!-- <img src="./images/e1.jpg" alt="" /> -->
+            <img src="{% static 'images/e1.jpg' %}" />
+            <div class="product-details">
+              <h2>Invaluable</h2>
+              <h6>Maya Grossman | 2020</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product education">
+            <img src="{% static 'images/e2.jpg' %}" />
+            <div class="product-details">
+              <h2>Educated</h2>
+              <h6>Tara Westover | 2018</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product education">
+            <img src="{% static 'images/e3.jpg' %}" />
+            <div class="product-details">
+              <h2>Learning Transformed</h2>
+              <h6>Eric C. Sheninger, Thomas C. Murray | 2020</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product action">
+            <img src="{% static 'images/a1.jpg' %}" />
+            <div class="product-details">
+              <h2>Nine Lives (Sam Archer)</h2>
+              <h6>Tom Barber | 2021</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product action">
+            <img src="{% static 'images/a2.jpg' %}" />
+            <div class="product-details">
+              <h2>The Corps Justice Series</h2>
+              <h6>C. G. Cooper | 2020</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product comedy">
+            <img src="{% static 'images/c1.jpg' %}" />
+            <div class="product-details">
+              <h2>Me and Earl and the Dying Girl</h2>
+              <h6>Andrews, Jesse | 2012</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product politics">
+            <img src="{% static 'images/p1.jpg' %}" />
+            <div class="product-details">
+              <h2>Fascism: A Warning</h2>
+              <h6>Madeleine Albright | 2019</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product comedy">
+            <img src="{% static 'images/c2.jpg' %}" />
+            <div class="product-details">
+              <h2>The Lake Effect</h2>
+              <h6>McCahan, Erin | 2017</h6>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product love">
+            <img src="{% static 'images/l1.jpg' %}" />
+            <div class="product-details">
+              <h2>It Ends With Us</h2>
+              <h6>COLLEEN HOOVER | 2020</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product love">
+            <img src="{% static 'images/l2.jpg' %}" />
+            <div class="product-details">
+              <h2>The Proposal</h2>
+              <h6>JASMINE GUILLORY | 2021</h6>
+
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product horror">
+            <img src="{% static 'images/h1.jpg' %}" />
+            <div class="product-details">
+              <h2>House of Leaves</h2>
+              <h6>Mark Z. Danielewski | 2021</h6>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="store-product drama">
+            <img src="{% static 'images/d1.jpg' %}" />
+            <div class="product-details">
+              <h2>I Shouldn't Fall For You</h2>
+              <h6>_gorgeousin | 2021</h6>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <div class="button">
+                <a href="#">See Book</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="{% static 'js/landing_script.js' %}"></script>
+  </body>
+</html>
