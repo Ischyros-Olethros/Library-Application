@@ -2,94 +2,115 @@
 <html lang="en" dir="ltr">
   <head>
     <style media="screen">
-      .btn-circle.btn-xl {
-        width: 70px;
-        height: 70px;
-        padding: 10px 16px;
-        border-radius: 35px;
-        font-size: 24px;
-        line-height: 1.33;
-      }
 
-      .btn-circle {
-        width: 30px;
-        height: 30px;
-        padding: 6px 0px;
-        border-radius: 15px;
-        text-align: center;
-        font-size: 12px;
-        line-height: 1.42857;
-      }
+      
+@-webkit-keyframes glow {
+from {
+color: rgb(0, 0, 0);
+text-shadow: 0 0 10px #9c36b1, 0 0 20px #944cb6, 0 0 30px #e043e6, 0 0 40px #ce22c5, 0 0 50px #9a2fa3, 0 0 60px #bd3edd, 0 0 70px #00fff2, 0 0 90px #00fff2;
+}
 
-      .jumbotron {
-        margin-top: 0px;
-        margin-bottom: 0px;
-      }
-      .jumbotron h1 {
-        text-align: center;
-      }
-    </style>
+to {
+color: rgb(20, 19, 19);
+text-shadow: 0 0 20px #c91b95, 0 0 30px #b94bcf, 0 0 40px #c44ab9, 0 0 50px #e21cd2, 0 0 60px #00fff2, 0 0 70px #d421bc, 0 0 80px #00fff2, 0 1 90px #00ff00;
+}
+}
+   .btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.jumbotron{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.jumbotron h1{
+  text-align: center;
+  font-weight: bold;
+
+font-size: 56px;
+animation-name: example;
+animation-duration: 4s;
+-webkit-animation: glow 2s ease-in-out infinite alternate;
+-moz-animation: glow 2s ease-in-out infinite alternate;
+animation: glow 2s ease-in-out infinite alternate;
+margin: 29px;
+ 
+}
+.options{
+margin-top: 90px;
+margin-bottom: 50px;
+}
+
+
+@media(max-width:870px){
+.options{
+  text-align: left;
+}
+html{
+  font-size: 85%;
+}
+}
+@media(max-width:800px){
+.options{
+  text-align: left;
+}
+#issue{
+  margin-top: 70px;
+ padding-left: 10px;
+ 
+}
+
+html{
+  font-size: 80%;
+}
+
+} 
+
+</style>
+
+
+
   </head>
   <body>
     {% include "library/navbaradmin.html" %}
-    <br />
-    <br />
-    <center>
-      <h3 style="margin-bottom: 0px" class="alert alert-success"></h3>
-    </center>
-    <div class="jumbotron" style="margin-bottom: 0px">
-      <h1 class="display-4">Hy admin {{user.first_name}} !</h1>
-      <p class="lead">
-        As you are Admin, you can add book, view available book in library,
-        Delete book, update book and many more ...
-      </p>
-      <hr class="my-4" />
-      <p></p>
-      <div class="options" style="text-align: center">
-        <a
-          href="addbook"
-          class="btn btn-primary btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >Add Book To Library</a
-        ><br /><br />
-        <a
-          href="viewbook"
-          class="btn btn-primary btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >View Available Book</a
-        ><br /><br />
-        <a
-          href="issuebook"
-          class="btn btn-primary btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >Issue New Book</a
-        ><br /><br />
-        <a
-          href="viewissuedbook"
-          class="btn btn-primary btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >View Issued Book</a
-        ><br /><br />
-        <a
-          href="viewstudent"
-          class="btn btn-primary btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >View Student</a
-        ><br /><br />
-        <a
-          href="viewreservebook"
-          class="btn btn-primary btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >Reserve Book</a
-        >
-      </div>
+    <br>
+    <br>
+    <center><h3 style=" margin-bottom: 0px;"class = 'alert alert-success'></h3></center>
+    <div class="jumbotron"   style="margin-top: -40px; background-image: url(../../static/images/library1.jpg); background-position: center; background-size: cover;">
+    <h1 style="box-sizing: border-box;" class="dispdlay-4">Hy admin {{user.first_name}} ! </h1>
+    <p class="lead" style="color:black; font-weight: bold;">As you are Admin, you can add book, view available book in library,
+        Delete book,
+      update book and many more ... 
+
+    </p>
+    <hr class="my-4" style="color: black;">
+    <p></p>
+    <div class="options" style="text-align: center;">
+      <a href="addbook" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="margin-left: 0px; background-color: crimson;">Add Book To Library</a>
+      <a href="viewbook" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="margin-left: 70px; background-color: crimson;">View Available Book</a>
+      <a href="issuebook" class="btn btn-primary btn-lg active" id="issue" role="button" aria-pressed="true" style="margin-left: 70px; background-color: crimson; width: 200px;" >Issue New Book</a><br><br>
+      <a href="viewissuedbook" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="margin-left: 10px; margin-top: 50px;">View Issued Book</a>
+      <a href="viewstudent" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="margin-left: 70px; margin-top: 50px; width: 200px; ">View Student</a><br><br>
+      <a href="viewreservebook" class="btn btn-primary btn-lg active" id="reserve"  role="button" aria-pressed="true" style="margin-left: 0px; margin-top: 50px; width: 200px; background-color: darkgreen;">Reserve Book</a>
     </div>
+
+    </div>
+
 
     {% include "library/footer.html" %}
   </body>
