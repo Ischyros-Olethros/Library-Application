@@ -63,4 +63,8 @@ urlpatterns = [
     path('viewstudent', views.viewstudent_view),
     path('viewissuedbookbystudent', views.viewissuedbookbystudent),
     path('viewreservebook', views.reservebook_view,name='viewreservebook'),
+    path('adminlogin_view/',views.adminlogin_view, name= 'adminlogin_view'),
+    path('studentlogin_view/',views.studentlogin_view, name= 'studentlogin_view'),
+    path('studentregrestation_view/',views.studentregrestation_view, name= 'studentregrestation_view'),
+
 ]
