@@ -115,6 +115,18 @@ def reservebook_view(request):
     books = models.Book.objects.all()
     return render(request, 'library/viewreservebook.html', {'books': books})
 
+    
+def adminlogin_view(request):
+    return render(request, 'library/admin-login.html')
+
+def studentlogin_view(request):
+    return render(request, 'library/student-login.html')
+
+
+def studentregrestation_view(request):
+    return render(request, 'library/student-regestation.html')
+
+
 # delete view 
 from .models import Book
 @login_required(login_url='adminlogin')
