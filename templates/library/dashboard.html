@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+
+<title>
+    herald library
+</title>
+<meta content = "width=device-width, initial -scale=1.0, maximum-scale=1" name = "viewport">
+
+<link rel = "shortcut icon" type = "image/x-icon" href="">
+<link href="style.css" rel ="stylesheet">
+<link rel= "stylesheet" media="screen" href= "">
+<link rel = "stylesheet" media = "screen, print" href= "">
+
+<meta name = "csrf-param" content= "authenticity_token">
+<meta name= 'csrf-token' content = ''>
+
+<body>
+    <header class = "fixed-top" >
+        <div class= "header-content fixed-top">
+            <span id= "login-icon"><i class= "fa fa-sign-in"></i></span>
+            <span id = "new-user"><i class = "fa fa-lock" aria-hidden="true"></i></span>
+            <span id= "login"><a href= "#" class= "register">Login</a></span>
+            <span id= "sign-up"><a href= "" class="register">Sign Up</a></span>
+
+        </div>
+        <nav class= "navbar navbar-expand-lg navbar-dark bg-dark ">
+            <button class= "navbar-toggler" type= "button" data -toggle="collapse" data-target= "#navbarText" aria-controls="navbarText"aria-331832expanded="false" aria-label="Toggle navigation">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <img class= "logo" src= "" alt= "herald library">
+            <div class = "nav-data collapse navbar-collapse" id = "navbarText" style="margin-left:20px">
+                <ul class = "nav-item">
+                    <li class= "nav-item">
+                        <a class ="nav-link" href=""> Home <span class= "sr-only">(current)</a>
+                    </li>
+                    <li class= "nav-item dropdown">
+                        <a class= "nav-link dropdown-toggle" href= "" id= "navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                        <div class= "dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item bookpage" value="novels">Novels</a>
+                            <a class= "dropdown-item bookpage" value= "Fantasy"> Fantasy</a>
+                            <a class = "dropdown-item bookpage" value= "adventure"> Adventure</a>
+                            <a class="dropdown-item bookpage" value= "Biography"> Biography</a>
+                            <a class="dropdown-item bookpage" value= "Study"> Study</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""> Contact US</a>
+                    </li>
+                    <li class= "nav-item">
+                        <a class= "nav-link" href="">About</a> 
+                    </li>
+                    <input id= "username" class= "d-none" value= "">
+                    <input id = "userid" class= "d-none" value="">
+                </ul>
+            </div> 
+            </nav>
+    </header>
+
+    <input id="username" class = "d-none" value="">
+<div class = "container-fluid" style = "padding-top: 120px;">
+    <div id = "myCarousel" class="carousel slide" data-ride= "carousel">
+        
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class= "active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class= "carousel-inner">
+            <div class = "item active">
+                <img src= "" alt =" slide 1" style= "width: 100%;">
+                <div class = "carousel-caption text-left">
+                    <h3 class = "policy-heading"> 24/7 serivice </h3>
+                </div>
+            </div>
+            <div class= "item">
+                <img src="" alt= "slide 2" style="width: 100%;">
+                <div class = "carousel-caption text-left">
+                    <h3 class = "policy-heading"> Gain Knowledge from books</h3>
+                </div>
+            <div class = "items">
+                <img src="" alt = "slide 3" style="width: 100%;">
+                <div class = "carousel-caption text-left">
+                    <h3 class="policy-heading"> Free delivery</h3>
+                </div>
+            </div>
+            </div>
+            <a class = "left carousel-control" href="#myCarousel" data-slide= "prev">
+                <span class= "sr-only"> previous </span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="sr-only"> next </span>
+            </a>
+        </div>
+    </div>
+    <div class= "center container-fluid">
+        <div class = "col-sm-12 policy">
+            <div class= "col-sm-3">
+                <img class="customer" src="">
+                <h4 class= "policy-data"> Free Delivery</h4>
+            </div>
+            <div class="col-sm-3">
+                <i class= "customer money fa fa-clock-o" aria-hidden="true" style="color:red ; font-size: 60px;"></i>
+                <h4 class= "policy-data"> return policy</h4>
+            </div>
+            <div class="col-sm-3">
+                <img class = "customer" src= "">
+                <h4 class= "policy-data">fast delivery</h4>
+            </div>
+            <div class="col-sm-3">
+                <i class="fa fa money" style="font-size: 70px; color:burlywood"></i>
+                <h4 class="policy-data">Cash on delivery</h4>
+            </div>
+        </div>
+    </div>
+    <div class="book-content" style="padding:0px 170px 20px 170px;">
+        <div class="row">
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "images/alchemist.jpg" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">Alchemist</h6>
+                    <span>
+                        <p class = "para"><span style="color: grey;">price: </span>Rs. 450<br>
+                        <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+
+                    </span>
+                     </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+            <div class="card" style="width: 230px; height: 345px;">
+                <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                <div class="card-body"> 
+                <h6 class = "book-name">The kite runner</h6>
+                <span>
+                    <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                    <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+
+                </span>
+                 </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">the girl in Room 105</h6>
+                <span>
+                    <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                    <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The Book Theif</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">wings of Fire</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">love yourself</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>    
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>        
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">Wings of fire</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <div class="card" style="width: 230px; height: 345px;">
+                    <img style="width: 228px; height: 230px;" src= "" class="card-img-top" alt= "...">
+                    <div class="card-body"> 
+                    <h6 class = "book-name">The kite runner</h6>
+                <span>
+                <p class = "para"><span style="color: grey;">price: </span>Rs. 400<br>
+                <button class="cartbtn btn store" value="5d7605c50b005a1e0973e22f">Add to cart</button><a class="details" href="">details</a></p>
+                </span>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <div class = "component container-fluid">
+        <div class="col-sm-12 customer-area">
+            <div class = "col-sm-3">
+                <img class="customer" src="">
+                <h4 class="content"> Buy your book</h4>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus incidunt reiciendis minus nisi eligendi libero ea consectetur? Sint consequatur illo, labore laborum perferendis dolore quas architecto corporis dolor corrupti accusantium?</p>
+            </div>
+            <div class="col-sm-3">
+                <img class="customer" src="">
+                <h4 class="content"> find book</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, omnis exercitationem impedit saepe pariatur perferendis molestias autem sequi quas obcaecati incidunt accusamus expedita repellat odit consectetur eum dolor non laudantium.</p>           
+            </div>
+            <div class=col-sm-3>
+                <img class="customer" src="">
+                <h4>High quality</h4>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias, tempora ipsam repellendus nesciunt magni esse consequuntur asperiores et saepe nihil libero maiores repellat sequi officia dolorum. Consequuntur, delectus ad!</p>  
+            </div>
+            <div class="col-sm-3">
+                <img class="customer" src="">
+                <h4>customer support</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iure tenetur ratione pariatur excepturi, aliquam sint quo quas, optio eligendi laudantium repellat atque. Officia eveniet itaque assumenda cupiditate velit pariatur!</p> 
+            </div>
+    </div>
+</div>
+<footer>
+<div class="data col-sm-12">
+    <div class="col-sm-3">
+        <h3 id= "footer-heading"></h3>
+        <ul style = "list-style-type: none;">
+            <li>
+                <h3 style="font-weight: bold; color: #ff8400">make money with us</h3>
+            </li>
+            <li style="color: whitesmoke;">buy on herald library</li>
+            <li style="color: whitesmoke;">advertise your book</li> 
+            </ul>
+    </div>
+    <div class= "col-sm-4">
+        <h3 id= "footer-heading"> Useful links</h3>
+        <a class="text privacy" style="color: white;">Privacy</a>
+        <a class="text aboutpage" style="color: white;">About us</a>
+        <a class="text terms" style="color: white;"> Terms</a>
+        <a class="text contactpage" style="color: white;"> Contact</a>
+    </div>
+    <div class="footer-data col-sm-3">
+        <h3 id="footer-heading"> Connect with us</h3>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook circle"></i></a>
+            <a href="#"><i class="fa fa-google-plus circle"></i></a>
+            <a href="#"><i class="da da-twitter circle"></i></a>
+    </div>
+
+</div>
+</div>
+<div class="modal fade" id="modelRegistrationForm" tableindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title w-100 font-weight-bold">update details</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <p id= 'updatemessage'>
+            </p>
+            <form id= "updateinfo">
+                <div class="modal-body mx-3" style="background-color: #7fa3a0!important;text-align: left;">
+                <div class="md-form mb-5">
+                    <label for="name"> Your name</label>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" id="username" name= "name" value="" class="form-control">
+                </div>
+                <div class="md-form mb-5">
+                    <label for="email"> your email</label>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="email" value="" id="useremail" name="email" class="form-control">  
+                </div>
+                <div class="md-form mb-4">
+                    <label for="password"> your password</label>
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                    <input type="text" value="" id="userpassword" name="password" class="form-control validate">
+                </div>
+                <div class="md-form mb-4">
+                    <label for="phonenumber">your phone number</label>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <input type="text" id="usernumber" value="" name= "number" class="form-control validate">
+
+                </div>
+                </div>
+                <div class="modal-footer d-flex">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                    <button class="btn btn-primary" id= "updatedata"> Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
+
